@@ -31,8 +31,13 @@
           id="suelo"
           src="https://cdn.glitch.com/4390c048-0cf2-49a3-ab03-4f452164ad25%2Fasset.gltf?v=1611781161035"
         ></a-asset-item>
+        <img
+          id="skybox"
+          crossorigin="anonymous"
+          src="https://aframe.io/aframe/examples/boilerplate/panorama/puydesancy.jpg"
+        />
       </a-assets>
-      
+        
       <a-marker
                 id="animated-marker"
                 type="pattern"
@@ -46,40 +51,41 @@
 
       <a-entity
         id="botella"
+        botella
         gesture-handler=""
-        animation-mixer=""
         gltf-model="https://cdn.glitch.com/4390c048-0cf2-49a3-ab03-4f452164ad25%2Fbotella.gltf?v=1611800017355"
         data-children-count="0"
         scale="5 5 5"
         class="clickable"
-        ></a-entity>
-        <a-entity
+      ></a-entity>
+      <a-entity
         id="suelo"
         gltf-model="https://cdn.glitch.com/4390c048-0cf2-49a3-ab03-4f452164ad25%2Fasset.gltf?v=1611781161035"
         class="clickable"
         gesture-handler=""
         data-children-count="0"
         scale="0.1 0.1 0.1"
-        ></a-entity>
+      ></a-entity>
 
-        <!-- <a-entity
-          camera=""
-          id="player"
-          fps-look-controls=""
-          position="1.46966 6.15503 5"
-          rotation="-49.73273661735546 13.292620847035097 0"
-          data-aframe-inspector-original-camera=""
-          >
-          <a-entity
+      <a-entity
+        camera=""
+        id="player"
+        fps-look-controls=""
+        position="0.0644 -0.3 1.61909"
+        rotation="-1 -1 0"
+        data-aframe-inspector-original-camera=""
+      >
+        <a-entity
           cursor=""
           position="0 0 -0.5"
           geometry="primitive: ring; radiusInner: 0.01; radiusOuter: 0.016"
           material="opacity: 0.5; shader: flat; transparent: true; color: #ff9"
           scale="0.8 0.8 0.8"
           raycaster=""
-          >
+        >
         </a-entity>
-      </a-entity> -->
+      </a-entity>
+
       <a-box
         gesture-handler=""
         position="-0.98435 0.54053 -0.50637"
@@ -90,8 +96,8 @@
         data-children-count="0"
         scale="0.5 0.5 0.5"
         class="clickable"
-        ></a-box>
-        <a-sphere
+      ></a-box>
+      <a-sphere
         class="clickable"
         position="0.39078 1.07418 -0.3842"
         radius="1.25"
@@ -101,31 +107,32 @@
         scale="0.3 0.3 0.3"
       ></a-sphere>
       <a-cylinder
-      class="clickable"
-      gesture-handler=""
-      position="0.24826 0.68367 0.86105"
-      radius="0.5"
-      height="1.5"
-      color="#FFC65D"
-      material=""
-      geometry=""
-      data-children-count="0"
-      scale="0.5 0.5 0.5"
+        class="clickable"
+        gesture-handler=""
+        position="0.24826 0.68367 0.86105"
+        radius="0.5"
+        height="1.5"
+        color="#FFC65D"
+        material=""
+        geometry=""
+        data-children-count="0"
+        scale="0.5 0.5 0.5"
       ></a-cylinder>
       <a-entity
-      gesture-handler=""
+        gesture-handler=""
         light="intensity: 0.6; castShadow: true"
         position="-0.5 1 1"
         data-aframe-default-light=""
         aframe-injected=""
         data-children-count="0"
-        ></a-entity>
-      
-        <a-entity
+      ></a-entity>
+
+      <a-entity
         gesture-handler=""
         position="0 5.157 0"
         light="type: ambient; color: #7f3281"
-        ></a-entity>
+      ></a-entity>
+      <a-sky src="#skybox" rotation="0 -130 0"></a-sky>
       </a-marker> 
     </a-scene>
   </body>
