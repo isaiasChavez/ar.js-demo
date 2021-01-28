@@ -2,23 +2,22 @@
 <html>
   <head>
     <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
-    <!-- <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script> -->
+     <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script> 
     <script src="https://raw.githack.com/donmccurdy/aframe-extras/master/dist/aframe-extras.loaders.min.js"></script>
     <script src="https://raw.githack.com/AR-js-org/studio-backend/master/src/modules/marker/tools/gesture-detector.js"></script>
     <script src="https://raw.githack.com/AR-js-org/studio-backend/master/src/modules/marker/tools/gesture-handler.js"></script>
     <script src="https://unpkg.com/aframe-fps-look-controls-component/dist/aframe-fps-look-controls-component.min.js"></script>
 
-    <!--  -->
     <script src="./src/botella.js"></script>
   </head>
 
   <body style="margin: 0; overflow: hidden;">
-    <!-- arjs="trackingMethod: best; sourceType: webcam; debugUIEnabled: false;" -->
-    <!-- vr-mode-ui="enabled: false;" -->
-    <!-- loading-screen="enabled: false;" -->
-    <!-- renderer="logarithmicDepthBuffer: true;" -->
-    <!-- embedded -->
-    <!-- gesture-detector -->
+     arjs="trackingMethod: best; sourceType: webcam; debugUIEnabled: false;" 
+     vr-mode-ui="enabled: false;" 
+     loading-screen="enabled: false;" 
+     renderer="logarithmicDepthBuffer: true;" 
+     embedded 
+     gesture-detector 
     <a-scene
       inspector="https://cdn.jsdelivr.net/gh/aframevr/aframe-inspector@master/dist/aframe-inspector.min.js"
       id="scene"
@@ -34,7 +33,7 @@
         ></a-asset-item>
       </a-assets>
 
-      <!-- <a-marker
+      <a-marker
                 id="animated-marker"
                 type="pattern"
                 preset="custom"
@@ -43,8 +42,8 @@
                 emitevents="true"
                 cursor="fuse: false; rayOrigin: mouse;"
                 id="markerA"
-            > -->
-      <!-- id="bowser-model" -->
+            > 
+       <!-- id="bowser-model" -->
 
       <a-entity botella scale="10 10 10">
         <a-entity
@@ -130,7 +129,7 @@
         position="0 5.157 0"
         light="type: ambient; color: #7f3281"
       ></a-entity>
-      <!-- </a-marker> -->
+      </a-marker> 
     </a-scene>
   </body>
 </html>
