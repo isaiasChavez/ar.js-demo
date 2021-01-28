@@ -14,9 +14,11 @@ AFRAME.registerComponent('botella', {
     // }
   },
  init: function() {
-   console.log("OBJETO",this.el);
+   // console.log("OBJETO",this.el);
     var data = this.data
-    var el = this.el
+  var el = this.el
+  let atributeGesture = this.el.getAttribute('gesture-handler')
+  console.log("atributeGesture",atributeGesture);
     this.el.addEventListener('click', () => {
       let atributeAnimation = this.el.getAttribute('animation-mixer')
       console.log(atributeAnimation)
